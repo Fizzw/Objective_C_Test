@@ -81,14 +81,33 @@ int main(int argc, const char * argv[]) {
 //        int triangularNumber;
 //        triangularNumber = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8;
 //        NSLog(@"The eight triangularNumber is = %i",triangularNumber);
-        int n,triangularNumber;
+        int n,triangularNumber,number;
+//        triangularNumber = 0;
+//
+//        for (n = 1; n <= 200; n = n + 1)
+//            triangularNumber += n;
+//            NSLog(@"The 200th triangular number is %i",triangularNumber);
+//for (init_expression, loop_condition, loop_expression)
+//program statement
+        
+//        NSLog(@"Table of Triangular Numbers");
+//        NSLog(@"n Sum from 1 to n");
+//        NSLog(@"-- ------------");
+//
+//        triangularNumber = 0;
+//        for (n = 1; n <= 10; ++n) {
+//            triangularNumber += n;
+//            NSLog(@"%i              %i",n,triangularNumber);
+//        }
+        NSLog(@"What triangular number do you want?");
+        scanf("%i", &number);
+        
         triangularNumber = 0;
         
-        for (n = 1; n <= 200; n = n + 1)
+        for (n = 1; n <= number; ++n)
             triangularNumber += n;
-            NSLog(@"The 200th triangular number is %i",triangularNumber);
-            //for (init_expression, loop_condition, loop_expression)
-        //program statement
+        NSLog(@"Triangular number %i is %i\n",number,triangularNumber);
+        
         
     }
     return 0;
