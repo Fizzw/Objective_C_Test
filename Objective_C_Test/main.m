@@ -66,17 +66,29 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"charVar = %c",charVar);
         
         ///import "calculator.h"
-        Calculator *deskCalc;
+//        Calculator *deskCalc;
+//
+//        deskCalc = [[Calculator alloc]init];
+//
+//        [deskCalc clear];
+//        [deskCalc setAccumulator : 100.0];
+//        [deskCalc add : 200.];
+//        [deskCalc substract: 15.0];
+//        [deskCalc divide: 5.0];
+//        [deskCalc multiply: 1.5];
+//        NSLog(@"Caculator is value = %g",[deskCalc accumulator]);
         
-        deskCalc = [[Calculator alloc]init];
+//        int triangularNumber;
+//        triangularNumber = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8;
+//        NSLog(@"The eight triangularNumber is = %i",triangularNumber);
+        int n,triangularNumber;
+        triangularNumber = 0;
         
-        [deskCalc clear];
-        [deskCalc setAccumulator : 100.0];
-        [deskCalc add : 200.];
-        [deskCalc substract: 15.0];
-        [deskCalc divide: 5.0];
-        [deskCalc multiply: 1.5];
-        NSLog(@"Caculator is value = %g",[deskCalc accumulator]);
+        for (n = 1; n <= 200; n = n + 1)
+            triangularNumber += n;
+            NSLog(@"The 200th triangular number is %i",triangularNumber);
+            //for (init_expression, loop_condition, loop_expression)
+        //program statement
         
     }
     return 0;
